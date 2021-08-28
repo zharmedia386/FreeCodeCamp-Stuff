@@ -1,0 +1,68 @@
+<!-- Relatif terhadap parent terdekatnya, bisa diubah top bottom left right, parent-nya harus relative postion dlu -->
+<style>
+  #searchbar {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+  section {
+    position: relative;
+  }
+</style>
+<body>
+  <h1>Welcome!</h1>
+  <section>
+    <form id="searchbar">
+      <label for="search">Search:</label>
+      <input type="search" id="search" name="search" />
+      <input type="submit" name="submit" value="Go!" />
+    </form>
+  </section>
+</body>
+
+<!-- 
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        height: 500vh;
+      }
+      div {
+      	margin: auto;
+      }
+      .red-text {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+      }
+      .blue-text {
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0px;
+      }
+      .orange-text {
+        background-color: orange;
+        width: 100px;
+        height: 100px;
+      }
+      .container {
+        border: 5px solid green;
+        width: 50%;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="red-text"></div>
+      <div class="blue-text"></div>
+      <div class="orange-text"></div>
+    </div>
+  </body>
+</html>
+
+ -->
