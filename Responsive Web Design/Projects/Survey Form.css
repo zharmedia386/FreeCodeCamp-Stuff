@@ -1,0 +1,118 @@
+@import url('https://fonts.google.com/specimen/Inter');
+@import url('https://fonts.google.com/specimen/Lexend+Deca');
+
+:root {
+  --gradient-ungu: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  --biru-tua: #1e3163;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: auto;
+}
+
+body {
+  background: var(--gradient-ungu);
+  background-repeat: no-repeat;
+  padding: 9.2rem 1.44rem 5.25rem;
+}
+
+.card {
+  font-family: Inter;
+  width: 110vh;
+  height: auto;
+  border-radius: 25px;
+  padding: 80px;
+  background-color: whitesmoke;
+  margin: 60px auto;
+}
+/* START FORM */
+.judul-form {
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-family: Inter;
+}
+
+input[type='text'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: Inter;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: Inter;
+}
+
+input[type='text'] {
+  font-family: Inter;
+}
+
+input[type='submit'] {
+  background-color: #8166e8;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  font-family: Inter;
+  transition: 0.5s;
+}
+
+input[type='submit']:hover {
+  background-color: #ad67e9;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  font-family: Inter;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  font-family: Inter;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type='submit'] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  label {
+    margin-bottom: 3px;
+  }
+}
+
+/* END FORM */

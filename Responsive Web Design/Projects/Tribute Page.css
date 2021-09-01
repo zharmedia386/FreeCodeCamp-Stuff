@@ -1,0 +1,158 @@
+@import url('https://fonts.google.com/specimen/Inter');
+@import url('https://fonts.google.com/specimen/Lexend+Deca');
+
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --transparent-white-1: hsla(0, 0%, 100%, 0.75);
+  --transparent-white-2: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  font-family: Inter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 160vh;
+  height: auto;
+  border-radius: 10px;
+  background-color: var(--dark-desaturated-blue);
+  margin: 60px auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.header img {
+  padding: 60px 60px 60px 30px;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    flex-direction: column;
+  }
+  .header img {
+    padding: 100px 60px 30px 60px;
+    margin: auto;
+    transform: scale(1.2);
+  }
+}
+
+.text-header {
+  padding: 60px 30px 60px 60px;
+}
+
+.title-header {
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+
+.title-header-color {
+  color: var(--soft-violet);
+}
+
+.text-header p {
+  word-wrap: break-word;
+  text-indent: 40px;
+  line-height: 1.75em;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.highlight {
+  color: var(--soft-violet);
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.content {
+  padding: 0px 60px 60px 60px;
+}
+
+.title-content {
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+
+.content p {
+  word-wrap: break-word;
+  text-indent: 40px;
+  line-height: 1.75em;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.mid-img {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  /* padding: 0px 60px 30px 60px; */
+}
+
+.img-caption1 {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 10px 0;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.img-caption2 {
+  display: flex;
+  justify-content: center;
+  padding: 0 0 10px 0;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: italic;
+}
+
+.quote {
+  padding: 0px 60px -0px 60px;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.name {
+  font-size: 20px;
+}
+
+.footer {
+  color: inherit;
+  overflow: hidden;
+  padding: 50px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer span {
+  display: block;
+  font-size: 0.9rem;
+  padding: 1px 0;
+}
+
+footer a {
+  text-decoration: underline;
+  color: var(--transparent-white-1);
+}
